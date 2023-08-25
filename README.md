@@ -3,7 +3,7 @@ local ThemeManager = {} do
 	ThemeManager.Folder = 'LinoriaLibSettings'
 	-- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
 
-httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"000000","AccentColor":"0055ff","BackgroundColor":"000000","OutlineColor":"323232"}') },
+httpService:JSONDecode('{"FontColor":"e95d18","MainColor":"fcce0a","AccentColor":"ec7e23","BackgroundColor":"ec7e23","OutlineColor":"323232"}') },
 		['Flame'] 		= { 1, httpService:JSONDecode('{"FontColor":"3c8b92","MainColor":"87f0ed","AccentColor":"1821f4","BackgroundColor":"1821f4","OutlineColor":"64e6de"}') },
 		['WaterSea'] 			= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"9ef1fc","AccentColor":"424bee","BackgroundColor":"424bee","OutlineColor":"141414"}') },
 		['LionKcLee']		= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1842","AccentColor":"c50754","BackgroundColor":"191335","OutlineColor":"3c355d"}') },
