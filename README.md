@@ -3,15 +3,18 @@ local ThemeManager = {} do
 	ThemeManager.Folder = 'LinoriaLibSettings'
 	-- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
 
+        ThemeManager.Library = nil
+	ThemeManager.BuiltInThemes = {
+		['Default'] 		= { 1, 
 httpService:JSONDecode('{"FontColor":"e95d18","MainColor":"fcce0a","AccentColor":"ec7e23","BackgroundColor":"ec7e23","OutlineColor":"323232"}') },
-		['Flame'] 		= { 1, httpService:JSONDecode('{"FontColor":"3c8b92","MainColor":"87f0ed","AccentColor":"1821f4","BackgroundColor":"1821f4","OutlineColor":"64e6de"}') },
-		['WaterSea'] 			= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"9ef1fc","AccentColor":"424bee","BackgroundColor":"424bee","OutlineColor":"141414"}') },
-		['LionKcLee']		= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"ffffff","AccentColor":"fff6d1","BackgroundColor":"ffffff","OutlineColor":"3c355d"}') },
-		['BlackShadowBlack'] 			= { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"7f0d0d","AccentColor":"e51818","BackgroundColor":"e51818","OutlineColor":"373737"}') },
-		['Devil Object'] 			= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"3db488","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
-		['Tokyo Night'] 	= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
-		['Ubuntu'] 			= { 7, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
-		['Orange Clear'] 			= { 8, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"232330","AccentColor":"426e87","BackgroundColor":"1d1b26","OutlineColor":"27232f"}') },
+		['Flame'] 		= { 2, httpService:JSONDecode('{"FontColor":"3c8b92","MainColor":"87f0ed","AccentColor":"1821f4","BackgroundColor":"1821f4","OutlineColor":"64e6de"}') },
+		['WaterSea'] 			= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"9ef1fc","AccentColor":"424bee","BackgroundColor":"424bee","OutlineColor":"141414"}') },
+		['LionKcLee']		= { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"ffffff","AccentColor":"fff6d1","BackgroundColor":"ffffff","OutlineColor":"3c355d"}') },
+		['BlackShadowBlack'] 			= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"7f0d0d","AccentColor":"e51818","BackgroundColor":"e51818","OutlineColor":"373737"}') },
+		['Devil Object'] 			= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"3db488","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
+		['Tokyo Night'] 	= { 7, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
+		['Ubuntu'] 			= { 8, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
+		['Orange Clear'] 			= { 9, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"232330","AccentColor":"426e87","BackgroundColor":"1d1b26","OutlineColor":"27232f"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
