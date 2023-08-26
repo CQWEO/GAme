@@ -8,7 +8,7 @@ local ThemeManager = {} do
 		['Default'] 		= { 1, 
 httpService:JSONDecode('{"FontColor":"e95d18","MainColor":"ec7e23","AccentColor":"fcce0a","BackgroundColor":"3c8b92","OutlineColor":"fcce0a"}') },
 		['Flame'] 		= { 2, httpService:JSONDecode('{"FontColor":"64e6de","MainColor":"87f0ed","AccentColor":"1821f4","BackgroundColor":"3c8b92","OutlineColor":"1821f4"}') },
-		['WaterSea'] 			= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"9ef1fc","AccentColor":"424bee","BackgroundColor":"424bee","OutlineColor":"141414"}') },
+		['WaterSea'] 			= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"9ef1fc","AccentColor":"d24bee","BackgroundColor":"3c8b92","OutlineColor":"d24bee"}') },
 		['LionKcLee']		= { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"ffffff","AccentColor":"fff6d1","BackgroundColor":"ffffff","OutlineColor":"3c355d"}') },
 		['BlackShadowBlack'] 			= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"7f0d0d","AccentColor":"e51818","BackgroundColor":"e51818","OutlineColor":"373737"}') },
 		['Devil Object'] 			= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"3db488","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
